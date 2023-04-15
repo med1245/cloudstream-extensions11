@@ -1,26 +1,13 @@
-// use an integer for version numbers
-version = 1
-
+version = 2
 
 cloudstream {
-    // All of these properties are optional, you can safely remove them
+    authors = listOf( "med1245" )
 
-    description = ""
-    authors = listOf("Jace")
+	language = "ar"
 
-    /**
-    * Status int as the following:
-    * 0: Down
-    * 1: Ok
-    * 2: Slow
-    * 3: Beta only
-    * */
-    status = 0 // will be 3 if unspecified
+    status = 1
 
-    // List of video source types. Users are able to filter for extensions in a given category.
-    // You can find a list of avaliable types here:
-    // https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-tv-type/index.html
-    tvTypes = listOf("NSFW")
+    tvTypes = listOf( "Anime" , "AnimeMovie" , "OVA" )
 
-    iconUrl = "https://www.google.com/s2/favicons?domain=example.com&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=detectiveconanar.com&sz=%size%"
 }
